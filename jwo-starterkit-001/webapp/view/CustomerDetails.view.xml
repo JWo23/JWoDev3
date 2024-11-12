@@ -1,0 +1,55 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"  xmlns:uiType="sap.ui.model.type" xmlns:core="sap.ui.core"
+  controllerName="stk.jwostarterkit001.controller.CustomerDetails" displayBlock="true">
+
+     <Page id="page2" title="{i18n>titleOfPage2}"
+     xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.customdata/1"
+     showNavButton="true" navButtonPress="_onBackToCustListPress">
+
+     <subHeader>
+		<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Show Contact Info" press="onCustDetContactInfo" />
+				<ToolbarSpacer/>
+		</Toolbar>
+
+	</subHeader>
+  
+     <content>
+    
+     <ObjectAttribute  title="CustID" text="{CustomerID}" />
+     <ObjectAttribute  title="CompanyName" text="{CompanyName}" />
+     <ObjectAttribute  title="ContactName" text="{ContactName}" />
+     <ObjectAttribute  title="Address" text= "{Address}"  />
+     
+     <Table id="idTableOrders"  items="{Orders}" >
+     <columns>
+			    <Column >
+			    	<Text text="OrderID" />
+			    </Column>
+			    <Column >
+			    	<Text text="CustomerID" />
+			    </Column>
+                    <Column >
+			    	<Text text="EmpID" />
+			    </Column>
+		    	<Column >
+			    	<Text text="OrderDate" />
+			    </Column>                        
+            </columns>
+            <items>
+			    <ColumnListItem vAlign="Middle" >
+                    <cells>
+                        
+                         <Text id="idItemOrdOrdId"  text= "{OrderID}" />
+                         <Text id="idItemOrdCustId" text= "{CustomerID}" />
+                         <Text id="idItemOrdEmpId"  text= "{parts: [{path: 'Employee/FirstName'},{path: 'Employee/LastName'}], formatter: '.formatter.formatFdotL'}" />
+                         <Text id="idItemOrdOrderDate" text= "{path: 'OrderDate', type: 'sap.ui.model.type.DateTime', formatOptions:{style: 'short' , UTC: 'true'}}" />
+                    </cells>
+            	</ColumnListItem>
+		    </items>
+     </Table>
+  
+     
+     </content>
+     </Page>
+</mvc:View>

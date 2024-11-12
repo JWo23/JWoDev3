@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m"  xmlns:core="sap.ui.core" >
+    <Dialog id="idFragCustDetInfContact" title="Contact Information" > 
+
+    <Text text="testuje" />
+
+    <buttons>
+        <Button text="Close" press="onBtnFrgInfoClose"/>
+    </buttons>
+    </Dialog>
+    
+</core:FragmentDefinition >

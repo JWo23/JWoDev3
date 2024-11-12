@@ -1,0 +1,35 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+  controllerName="stk.jwostarterkit001.controller.CustomersList" displayBlock="true">
+
+     <Page id="page3" title="{i18n>titleOfPage3}"
+     xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.customdata/1"
+     showNavButton="true" navButtonPress="_onBackToMasterPres">
+  
+     <content>
+
+<Table items="{path:'/Customers', parameters:{select: 'CustomerID, CompanyName,Country'}}">
+        	<columns>
+			    <Column >
+			    	<Text text="CustomerID" />
+			    </Column>
+			    <Column >
+			    	<Text text="Company" />
+			    </Column>
+		    	<Column >
+			    	<Text text="Adress" />
+			    </Column>                        
+            </columns>
+            <items>
+			    <ColumnListItem vAlign="Middle" type="Navigation" press="onCustDetPress" >
+                    <cells>
+                        
+                         <Text id="idItemCustId" text= "{CustomerID}" />
+                         <Text id="idItemComp" text= "{CompanyName}" />
+                         <Text id="idAddr1" text= "{Address}" />
+                    </cells>
+            	</ColumnListItem>
+		    </items>
+        </Table>
+     </content>
+     </Page>
+</mvc:View>
