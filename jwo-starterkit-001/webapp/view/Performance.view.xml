@@ -7,7 +7,34 @@
 
      <content>
   
-     
+     <Table items="{path:'/Employees'}">
+        	<columns>
+			    <Column >
+			    	<Text text="Employee ID" />
+			    </Column>
+			    <Column >
+			    	<Text text="First Name" />
+			    </Column>
+		    	<Column >
+			    	<Text text="Last Name" />
+			    </Column>      
+		    	<Column >
+			    	<Text text="Orders" />
+			    </Column>                               
+            </columns>
+            <items>
+			    <ColumnListItem vAlign="Middle" type="Navigation" press="onCustDetPress" >
+                    <cells>
+                        
+                         <Text id="idItemEmpId" text= "{EmployeeID}" />
+                         <Text id="idItemFN" text= "{FirstName}" />
+                         <Text id="idtdLN" text= "{LastName}" />
+                         <Text id="idtdOrdNum" text= "getOrderNumber( {EmployeeID}" ) />
+                         
+                    </cells>
+            	</ColumnListItem>
+		    </items>
+        </Table>
   
      
      </content>

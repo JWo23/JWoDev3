@@ -121,7 +121,7 @@
         },
         {
           "name": "RoutePerf",
-          "pattern": "",
+          "pattern": "Performance",
           "target": [
             "TargetPerf"  
           ]
