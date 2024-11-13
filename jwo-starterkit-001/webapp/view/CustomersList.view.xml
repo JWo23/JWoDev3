@@ -7,6 +7,8 @@
   
      <content>
 
+     <Button id="butCreCust" text="Create Customer" press="onCreateCustomerPress" class="jwoUiMediumMarginBegin sapUiTinyMarginTopBottom" ></Button>
+
 <Table items="{path:'/Customers', parameters:{select: 'CustomerID, CompanyName,Country'}}">
         	<columns>
 			    <Column >

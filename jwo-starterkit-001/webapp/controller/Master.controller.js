@@ -9,9 +9,16 @@ sap.ui.define([
 
         return Controller.extend("stk.jwostarterkit001.controller.Master", {
             onInit: function () {          
-            }
+            },
 
-            
+        
+            _onBackToCustListPress:function(oEvent){
+             
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("RouteCustList", "");
+            },    
+
+
         });
     }
     

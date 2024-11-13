@@ -1,14 +1,16 @@
 <mvc:View controllerName="stk.jwostarterkit001.controller.Master"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page1" title="{i18n>titleOfPage1}">
+    <Page id="page1" title="{i18n>titleOfPage1}"
+    showNavButton="true" navButtonPress="_onBackToCustListPress">
+
         <content>
         <Image id="img001" width="10%" height="10%"  src="https://www.sap.com/content/dam/application/shared/logos/sap-logo.png"/> 
-        <Carousel id="fun001" showPageIndicator="true" loop="true" height="50%">
-            <Image id="img002" src="https://warsawtour.pl/wp-content/uploads/2018/08/Zamkowy-Square_fot.-m.st_.-Warszawa_-PZ-Studio_Zbigniew-Panow.jpg" alt="Warszawa" />
+        <Carousel id="fun001" showPageIndicator="true" loop="true" height="50%" class= "jwoPinkBackground">
+            <Image id="img002" src="https://go2warsaw.pl/wp-content/uploads/plac-zamkowy-fot-warszawska-organizacja-turystyczna-768x512.jpg" alt="Warszawa" />
             <Image id="img003" width="60%" src="https://d3qvqlc701gzhm.cloudfront.net/full/01f9e33167e3ac076ded71221d7b238a90fb2423d5e584696a037ef28d1c996b.jpg" alt="Toronto" />
             <customLayout>
-             <CarouselLayout visiblePagesCount= "1" />
+             <CarouselLayout visiblePagesCount= "1"  />
       
             </customLayout>
         </Carousel>

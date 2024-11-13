@@ -23,7 +23,9 @@ sap.ui.define([
                 oRouter.navTo("RouteCustDet", {CustomerID: sCustId });
             },
 
-            _onBackToMasterPress:function(oEvent){
+            _onBackToMasterPres:function(oEvent){
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("RouteMaster", "");
             },
 
             _CustListMatched: function(oEvent){

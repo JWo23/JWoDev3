@@ -6,9 +6,9 @@
      showNavButton="true" navButtonPress="_onBackToCustListPress">
 
      <subHeader>
-		<Toolbar>
+		<Toolbar id="idTB_Contact">
 				<ToolbarSpacer/>
-				<Button text="Show Contact Info" press="onCustDetContactInfo" />
+				<Button id="idBtn_ContactInf" text="Show Contact Info" press="onCustDetContactInfo" />
 				<ToolbarSpacer/>
 		</Toolbar>
 
