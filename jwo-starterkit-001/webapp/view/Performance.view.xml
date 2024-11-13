@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"  xmlns:uiType="sap.ui.model.type" xmlns:core="sap.ui.core"
+  controllerName="stk.jwostarterkit001.controller.Performance" displayBlock="true">
+
+     <Page id="page4" title="{i18n>titleOfPage4}"
+     xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.customdata/1"
+     showNavButton="true" navButtonPress="_onBackToCustListPress">
+
+     <content>
+  
+     
+  
+     
+     </content>
+     </Page>
+</mvc:View>

@@ -28,6 +28,11 @@ sap.ui.define([
                 oRouter.navTo("RouteMaster", "");
             },
 
+            _onPerformancePress:function(oEvent){
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("RoutePerf","");
+            },
+
             _CustListMatched: function(oEvent){
                 this.getView().bindElement(
                     {

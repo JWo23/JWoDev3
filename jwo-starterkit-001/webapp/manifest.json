@@ -118,6 +118,13 @@
           "target": [
             "TargetCustDet"  
           ]
+        },
+        {
+          "name": "RoutePerf",
+          "pattern": "",
+          "target": [
+            "TargetPerf"  
+          ]
         }
       ],
       "targets": {
@@ -141,6 +148,13 @@
           "clearControlAggregation": false,
           "viewId": "vIdCustDet",
           "viewName": "CustomerDetails" 
+        },
+        "TargetPerf":{
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "vIdPerf",
+          "viewName": "Performance" 
         }
 
       }
