@@ -43,6 +43,7 @@
                          <Text id="idItemOrdOrdId"  text= "{OrderID}" />
                          <Text id="idItemOrdCustId" text= "{CustomerID}" />
                          <Text id="idItemOrdEmpId"  text= "{parts: [{path: 'Employee/FirstName'},{path: 'Employee/LastName'}], formatter: '.formatter.formatFdotL'}" />
+
                          <Text id="idItemOrdOrderDate" text= "{path: 'OrderDate', type: 'sap.ui.model.type.DateTime', formatOptions:{style: 'short' , UTC: 'true'}}" />
                     </cells>
             	</ColumnListItem>
